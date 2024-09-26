@@ -41,3 +41,34 @@ for(let index = 0; index < numArray.length; index++){
         console.log(numArray[index]);
     }
 }
+
+console.log("=================================");
+
+const building = 4;
+const floor = 3;
+
+// outer loop
+for(let i = 1; i <= building; i++){
+    console.log(`building ${i}`);
+    // inner loop
+    for(let j = 1; j <= floor; j++){
+        console.log(`building ${i} floor ${j}`);
+    }
+}
+
+// building 1
+// building 1 floor 1
+// building 1 floor 2
+// building 1 floor 3
+// building 2
+// building 2 floor 1
+// building 2 floor 2
+// building 2 floor 3
+// building 3
+// building 3 floor 1
+// building 3 floor 2
+// building 3 floor 3
+// building 4
+// building 4 floor 1
+// building 4 floor 2
+// building 4 floor 3
