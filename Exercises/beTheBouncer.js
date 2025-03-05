@@ -24,3 +24,17 @@ const nightClubRegister = [
         gender: 'male'
     }
 ];
+
+for(let index = 0; index < nightClubRegister.length; index++){
+    let addressee = "";
+    if(nightClubRegister[index].gender === "male"){
+        addressee = "Mr.";
+    } else if(nightClubRegister[index].gender === "female") {
+        addressee = "Mrs./Ms.";
+    }
+    if(nightClubRegister[index].age >= 18){
+        console.log(`Welcome, ${addressee} ${nightClubRegister[index].name} ${nightClubRegister[index].lastname} you are on the list!`);
+    } else {
+        console.log(`Sorry, ${addressee} ${nightClubRegister[index].name} ${nightClubRegister[index].lastname} you are not old enough to attend.`);
+    }
+}
