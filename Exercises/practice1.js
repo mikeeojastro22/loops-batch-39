@@ -5,3 +5,12 @@
     let num = 2; // 1 + 2 = 3
     let num = 10; // 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55
 */
+
+let total = 0;
+let num = 11;
+
+for(let i = 1; i <= num; i++){
+    total += i;
+}
+
+console.log(`The summation of ${num} is ${total}`);
